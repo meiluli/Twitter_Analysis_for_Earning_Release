@@ -50,11 +50,11 @@ def Function4():
     rtt.RealTimeTweet.run_main(keyword_list)
 
 if __name__ == "__main__":
-    # keyword_list = ['BILI'] #['KO','IBM','SYF','COF','ISRG','UAL','AIR','BIIB','LMT','TSLA'],'TWTR','SLB',INTC
-    # Function1(keyword_list)
+    keyword_list = ['BILI'] #['KO','IBM','SYF','COF','ISRG','UAL','AIR','BIIB','LMT','TSLA'],'TWTR','SLB',INTC
+    Function1(keyword_list)
     # Function2()
     # Function3()
-    Function4()
+    # Function4()
     pass
 
 
