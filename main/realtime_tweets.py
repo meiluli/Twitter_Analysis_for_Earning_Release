@@ -139,7 +139,7 @@ class RealTimeTweet:
         """get the sentiment percentage for a period of time
         """
         senti_obj = senti_process.SentiProcess(kw)
-        e_one_df = senti_obj.effective_ttr(one_df,5)
+        e_one_df = senti_obj.effective_tweet(one_df,5)
         isenti_hourly,itweets = senti_obj.senti_count(e_one_df,log_flag=0)
         pos_score = sum(itweets[itweets.Sentiment>0].Sentiment)/len(one_df)*100
         neg_score = sum(itweets[itweets.Sentiment<0].Sentiment)/len(one_df)*100
@@ -224,7 +224,7 @@ class RealTimeTweet:
     @classmethod
     def send_email(cls,trendup_ticker):
         #send to some one
-        toaddr = ['wz1298@nyu.edu','rangerrod1@gmail.com']
+        toaddr = ['ml6684@nyu.edu']
 
         if len(trendup_ticker)==0:
             # don't send email
@@ -252,9 +252,6 @@ class RealTimeTweet:
             
             elif now_min>30:
                 count_down.countdown(60-now_min)
-
-
-
 
 if __name__ == "__main__":
 
