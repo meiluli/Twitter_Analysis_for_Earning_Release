@@ -1,2 +1,2 @@
 # Twitter_Analysis_for_Earning_Release
-This project initialy aims to analyze earning release impact on stock prices by analyzing relevant tweets. And it has been developed to analyze other events such as Covid-19. 
+本项目最初旨在通过分析股票相关推文来决定财报发布前后的投资决策，它已经被开发用于分析其他事件，例如Covid-19。
